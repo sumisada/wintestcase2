@@ -1,0 +1,4 @@
+common:
+    :dns_server: 192.168.250.1
+    :osrelease: Windows Server 2019 Standard
+    

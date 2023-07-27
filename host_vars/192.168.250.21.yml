@@ -1,0 +1,4 @@
+---
+winrm_opts:
+  :user: 'Administrator'
+  :pass: 'Shimarisu2108!'
