@@ -1,4 +1,0 @@
----
-winrm_opts:
-  :user: 'Administrator'
-  :pass: ''
