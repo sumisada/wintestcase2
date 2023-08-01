@@ -1,4 +1,4 @@
 ---
 winrm_opts:
   :user: 'Administrator'
-  :pass: ENV['password']
+  :pass: 'Shimarisu2108!'

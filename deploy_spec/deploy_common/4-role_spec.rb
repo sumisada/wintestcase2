@@ -7,5 +7,21 @@ describe '4. 役割と機能' do
       its(:stdout) { should match /SNMP サービス/ }
     end
 
+    describe command('Get-WindowsFeature | where-object Name -eq "RSAT"') do
+      its(:stdout) { should match /リモート サーバー管理ツール/ }
+    end
+
+    describe command('Get-WindowsFeature | where-object Name -eq "RSAT-Feature-Tools"') do
+      its(:stdout) { should match /機能管理ツール/ }
+    end
+
+    describe command('Get-WindowsFeature | where-object Name -eq "RSAT-SNMP"') do
+      its(:stdout) { should match /SNMP ツール/ }
+    end
+
+    describe command('Get-WindowsFeature | where-object Name -eq "FileAndStorage-Services"') do
+      its(:stdout) { should match /ファイル サービスと記憶域サービス/ }
+    end
+
   end
 end
